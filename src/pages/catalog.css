@@ -1,0 +1,15 @@
+.smart{
+    background-color: #083691; 
+  color: white;            
+  padding: 8px 88px;        
+  border-radius: 12.5px;       
+  font-family: arial;   
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 15px;          
+  text-decoration: none;     
+  display: inline-block;     
+  border: none;              
+  cursor: pointer;           
+  transition: 0.3s;
+}
