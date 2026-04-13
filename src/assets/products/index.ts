@@ -1,0 +1,17 @@
+export { default as Jaket } from "./jaket-fleece.jpeg";
+export { default as Kemeja } from "./kemeja.jpeg";
+export { default as JerseyBola } from "./jersey-tim-bola.jpeg";
+export { default as JerseyMilano } from "./jersey-milano.jpeg";
+export { default as JerseyEmboss } from "./jersey-emboss.jpeg";
+export { default as JerseyAirwalk } from "./jersey-airwalk.jpeg";
+export { default as KaosAngkatan } from "./kaos-combed-angkatan.jpeg";
+export { default as KaosUmkm } from "./kaos-combed-umkm.jpeg";
+export { default as KaosCafe } from "./kaos-combed-cafe.jpeg";
+export { default as KaosDaycare } from "./kaos-daycare.jpeg";
+export { default as KaosCombedDaycare } from "./kaos-combed-daycare.jpeg";
+export { default as KaosKomunitas } from "./kaos-komunitas.jpeg";
+export { default as KaosPoloCombed } from "./kaos-polo-combed.jpeg";
+export { default as KaosPolo } from "./kaos-polo-cvc.jpeg";
+export { default as KaosRetail } from "./kaos-combed-retail.jpeg";
+export { default as KaosSatuan } from "./kaos-satuan.jpeg";
+export { default as TunikCustom } from "./tunik-custom.jpeg";
