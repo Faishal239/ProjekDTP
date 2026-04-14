@@ -58,7 +58,7 @@
       "tag": "bahan_polo",
       "patterns": ["bahan polo cvc", "kain cvc", "polo awet", "polo combed", "polo katun", "polo adem", "full cotton", "combed polo"],
       "responses": [
-        "Polo CVC: Campuran katun & poliester (sangat awet & tidak mudah melar). \nPolo Combed: 100% katun combed (lembut, halus, dan sangat sejuk)."
+        "Polo CVC: Campuran katun & poliester (sangat awet & tidak mudah melar). \nPolo Combed: 100% katun combed (lembut, halus, dan sangat sejuk). \n\nKedua jenis ini tersedia ukuran S sampai XXL ya Kak!"
       ],
       "context": [""]
     },
@@ -66,15 +66,15 @@
       "tag": "bahan_jersey",
       "patterns": ["jersey", "baju bola", "futsal", "dryfit", "airwalk", "milano", "emboss", "motif timbul", "jersey tim"],
       "responses": [
-        "Jersey Club: Bahan dry-fit premium. \nJersey Airwalk: Tekstur berpori, sangat adem. \nJersey Milano: Sangat halus dan ringan. \nJersey Emboss: Motif timbul eksklusif."
+        "Untuk Jersey, kami punya beberapa pilihan bahan (S-XXL): \n1. Jersey Club: Dry-fit premium. \n2. Jersey Airwalk: Berpori & adem. \n3. Jersey Milano: Halus & ringan. \n4. Jersey Emboss: Motif timbul eksklusif."
       ],
       "context": [""]
     },
     {
       "tag": "bahan_kemeja_jaket",
-      "patterns": ["bahan kemeja", "nagata drill", "pdl", "pdh", "seragam", "bahan jaket", "fleece premium", "hoodie", "sweater"],
+      "patterns": ["bahan kemeja", "nagata drill", "pdl", "pdh", "seragam"],
       "responses": [
-        "Kemeja: Nagata Drill (tebal, kuat, warna tidak mudah pudar). \nJaket: Fleece Premium (tebal namun tetap lembut di bagian dalam)."
+        "Kemeja: Nagata Drill (kuat & warna awet). \nJaket: Fleece Premium (lembut & tebal). \nSemua tersedia mulai ukuran S sampai XXL ya Kak!"
       ],
       "context": [""]
     },
@@ -82,7 +82,7 @@
       "tag": "kaos_custom",
       "patterns": ["kaos komunitas", "gathering", "reuni", "kaos kelas", "kaos anak", "satuan", "custom satuan", "lusinan", "kaos rombongan"],
       "responses": [
-        "Kami melayani pesanan kaos komunitas/lusinan maupun satuan. Untuk kaos anak/kelas, bahannya dijamin aman, nyaman, dan menyerap keringat."
+        "Kami melayani pesanan kaos custom (satuan/lusinan) dengan ukuran lengkap dari S sampai XXL. Untuk kaos anak juga tersedia size khusus yang nyaman dan menyerap keringat!"
       ],
       "context": [""]
     },
