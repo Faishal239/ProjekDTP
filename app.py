@@ -5,7 +5,7 @@ import numpy as np
 import nltk
 import random
 from nltk.stem import WordNetLemmatizer
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 
 lemmatizer = WordNetLemmatizer()
 intents = json.loads(open('chatbot.json').read())
@@ -43,7 +43,7 @@ def get_bot_response(message):
 # --- TAMPILAN UI STREAMLIT ---
 st.set_page_config(page_title="Cotton Fit AI Assistant", page_icon="👕")
 
-st.image("https://path-ke-logo-kamu.com/logo.png", width=100) # Ganti link logo Cotton Fit
+#st.image("https://path-ke-logo-kamu.com/logo.png", width=100) # Ganti link logo Cotton Fit
 st.title("AI Shopping Assistant")
 st.write("Kami siap membantu mencari kaos asik untuk momen epikmu!")
 
