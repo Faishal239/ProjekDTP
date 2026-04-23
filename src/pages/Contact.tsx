@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { MapPin, Phone, Instagram, Mail, MessageCircle } from "lucide-react";
+import { MapPin, Phone, Instagram, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
@@ -18,7 +18,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     const waMessage = `Halo Cottonfit!
 
 Nama: ${formData.name}
@@ -31,32 +31,25 @@ ${formData.message}`;
 
     const waUrl = `https://wa.me/6282228302403?text=${encodeURIComponent(waMessage)}`;
     window.open(waUrl, "_blank");
-    
+
     toast.success("Membuka WhatsApp...");
-    
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      orderType: "",
-      message: "",
-    });
+
+    setFormData({ name: "", email: "", phone: "", orderType: "", message: "" });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   return (
-    <div style={{ backgroundColor: '#ffffff' }} className="flex flex-col">
+    <div style={{ backgroundColor: "#ffffff" }} className="flex flex-col">
       {/* Hero Section */}
-      <section style={{ backgroundColor: '#ffffff' }} className="pt-10 pb-4">
+      <section style={{ backgroundColor: "#ffffff" }} className="pt-10 pb-4">
         <div className="container mx-auto px-4 text-center">
           <MessageCircle className="h-12 w-12 mx-auto mb-3 text-primary" />
-          <h1 className="text-4xl md:text-5xl font-bold mb-3 text-primary animate-fade-in">Hubungi Kami</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-3 text-primary animate-fade-in">
+            Hubungi Kami
+          </h1>
           <p className="text-base text-muted-foreground max-w-2xl mx-auto animate-fade-in">
             Kami siap membantu mewujudkan kebutuhan kaos custom Anda. Jangan ragu untuk bertanya!
           </p>
@@ -64,9 +57,10 @@ ${formData.message}`;
       </section>
 
       {/* Contact Content */}
-      <section style={{ backgroundColor: '#ffffff' }} className="py-8">
+      <section style={{ backgroundColor: "#ffffff" }} className="py-8">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+
             {/* Contact Information */}
             <div className="space-y-4 bg-white rounded-2xl p-6 shadow-md border border-gray-100">
               <div>
@@ -163,81 +157,35 @@ ${formData.message}`;
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div>
                     <Label htmlFor="name">Nama Lengkap *</Label>
-                    <Input
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      placeholder="Masukkan nama Anda"
-                      required
-                      className="mt-2"
-                    />
+                    <Input id="name" name="name" value={formData.name} onChange={handleChange} placeholder="Masukkan nama Anda" required className="mt-2" />
                   </div>
-
                   <div>
                     <Label htmlFor="email">Email</Label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="email@contoh.com"
-                      className="mt-2"
-                    />
+                    <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} placeholder="email@contoh.com" className="mt-2" />
                   </div>
-
                   <div>
                     <Label htmlFor="phone">No. WhatsApp *</Label>
-                    <Input
-                      id="phone"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      placeholder="08xxx"
-                      required
-                      className="mt-2"
-                    />
+                    <Input id="phone" name="phone" value={formData.phone} onChange={handleChange} placeholder="08xxx" required className="mt-2" />
                   </div>
-
                   <div>
                     <Label htmlFor="orderType">Jenis Pesanan *</Label>
-                    <Input
-                      id="orderType"
-                      name="orderType"
-                      value={formData.orderType}
-                      onChange={handleChange}
-                      placeholder="Contoh: Kaos Komunitas, Kaos Daycare, dll"
-                      required
-                      className="mt-2"
-                    />
+                    <Input id="orderType" name="orderType" value={formData.orderType} onChange={handleChange} placeholder="Contoh: Kaos Komunitas, Kaos Daycare, dll" required className="mt-2" />
                   </div>
-
                   <div>
                     <Label htmlFor="message">Pesan *</Label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      placeholder="Ceritakan detail kebutuhan Anda..."
-                      rows={4}
-                      required
-                      className="mt-2"
-                    />
+                    <Textarea id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Ceritakan detail kebutuhan Anda..." rows={4} required className="mt-2" />
                   </div>
-
                   <Button type="submit" className="w-full btn-primary-gradient" size="lg">
                     <MessageCircle className="h-5 w-5 mr-2" />
                     Kirim via WhatsApp
                   </Button>
-
                   <p className="text-sm text-muted-foreground text-center">
                     Pesan akan dikirim melalui WhatsApp Anda
                   </p>
                 </form>
               </Card>
             </div>
+
           </div>
         </div>
       </section>
