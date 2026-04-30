@@ -43,8 +43,29 @@ def get_bot_response(message):
 # --- TAMPILAN UI STREAMLIT ---
 st.set_page_config(page_title="Cotton Fit AI Assistant", page_icon="👕")
 
-#st.image("https://path-ke-logo-kamu.com/logo.png", width=100) # Ganti link logo Cotton Fit
-st.title("AI Shopping Assistant")
+st.markdown("""
+<style>
+    .stChatMessage:has([data-testid="stChatMessageAvatarUser"]) {
+        flex-direction: row-reverse !important;
+        background-color: transparent !important;
+    }
+
+    .stChatMessage:has([data-testid="stChatMessageAvatarUser"]) .stChatMessageContent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; 
+        width: 100%;
+    }
+
+    .stChatMessage:has([data-testid="stChatMessageAvatarUser"]) p {
+        text-align: right;
+        width: 100%;
+    }
+</style>
+""", unsafe_allow_html=True)
+
+st.image("http://localhost:8080/src/assets/cottonfit-logo.png", width=100) 
+st.title("Smart Chat Assistant")
 st.write("Kami siap membantu mencari kaos asik untuk momen epikmu!")
 
 if "messages" not in st.session_state:
